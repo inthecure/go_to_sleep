@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', function(){
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // Display popup after 1 minute, provided user has not seen it yet
+    // Display popup after 30 seconds, provided user has not seen it yet
     if (!popSeen) {
         setTimeout (function() {
             modal.style.display = "block";
             popSeen = true;
             sessionStorage.setItem("popupBool", popSeen);
-        }, 60000);
+        }, 30000);
     }
 
     // When the user clicks on <span> (x), close the modal
